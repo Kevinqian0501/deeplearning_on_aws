@@ -16,10 +16,8 @@ sudo apt-get -y install cuda
 #add to path
 export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-echo  "export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}" >> ~/.bashrc
-echo  "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
-
 source ~/.bashrc
+
 nvcc --version # Checks CUDA version
 nvidia-smi # Info about the detected GPUs
 
@@ -43,6 +41,3 @@ sudo pip install keras==2.0.8
 #jupyter
 sudo apt-get update
 sudo pip install jupyter
-
-# run jupyter
-sudo jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser &
