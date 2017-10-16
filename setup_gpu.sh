@@ -41,3 +41,6 @@ sudo pip install keras==2.0.8
 #jupyter
 sudo apt-get update
 sudo pip install jupyter
+
+# jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser &
+# fuser -k 8888/tcp
