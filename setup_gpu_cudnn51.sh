@@ -21,7 +21,7 @@ nvidia-smi # Info about the detected GPUs
 
 
 # cuDNN v5.1
-https://www.dropbox.com/s/636xwrg3kgs5ylm/cudnn-8.0-linux-x64-v5.1.tgz
+wget https://www.dropbox.com/s/636xwrg3kgs5ylm/cudnn-8.0-linux-x64-v5.1.tgz
 
 tar -xzf cudnn-8.0-linux-x64-v5.1.tgz
 cd cuda
