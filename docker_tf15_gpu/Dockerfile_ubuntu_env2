@@ -1,0 +1,4 @@
+FROM ubuntu_env:latest
+
+# create virtual env and install dependencies
+RUN virtualenv -p python3.5 /opt/venv  
