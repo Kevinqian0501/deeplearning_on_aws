@@ -1,0 +1,19 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+   Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since Sat 2018-02-24 01:00:23 UTC; 1h 16min ago
+     Docs: https://docs.docker.com
+ Main PID: 28405 (dockerd)
+   CGroup: /system.slice/docker.service
+           ├─28405 /usr/bin/dockerd -H fd://
+           └─28416 docker-containerd --config /var/run/docker/containerd/containerd.toml
+
+Feb 24 02:10:07 ip-172-31-38-56 dockerd[28405]: time="2018-02-24T02:10:07.888365215Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/containers/delete type="*events.ContainerDelete"
+Feb 24 02:10:10 ip-172-31-38-56 dockerd[28405]: time="2018-02-24T02:10:10.802890616Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/containers/create type="*events.ContainerCreate"
+Feb 24 02:10:10 ip-172-31-38-56 dockerd[28405]: time="2018-02-24T02:10:10Z" level=info msg="shim docker-containerd-shim started" address="/containerd-shim/moby/d873a276a77be9680776342f94b72cbe33f3249ca9838f976923dc243e502154/shim.sock" debug=false module="containerd/tasks" pid=21231
+Feb 24 02:10:10 ip-172-31-38-56 dockerd[28405]: time="2018-02-24T02:10:10.982692261Z" level=warning msg="unknown container" container=d873a276a77be9680776342f94b72cbe33f3249ca9838f976923dc243e502154 module=libcontainerd namespace=plugins.moby
+Feb 24 02:10:10 ip-172-31-38-56 dockerd[28405]: time="2018-02-24T02:10:10.997422792Z" level=warning msg="unknown container" container=d873a276a77be9680776342f94b72cbe33f3249ca9838f976923dc243e502154 module=libcontainerd namespace=plugins.moby
+Feb 24 02:12:16 ip-172-31-38-56 dockerd[28405]: time="2018-02-24T02:12:16.580512740Z" level=warning msg="unknown container" container=d873a276a77be9680776342f94b72cbe33f3249ca9838f976923dc243e502154 module=libcontainerd namespace=plugins.moby
+Feb 24 02:12:16 ip-172-31-38-56 dockerd[28405]: time="2018-02-24T02:12:16Z" level=info msg="shim reaped" id=d873a276a77be9680776342f94b72cbe33f3249ca9838f976923dc243e502154 module="containerd/tasks"
+Feb 24 02:12:16 ip-172-31-38-56 dockerd[28405]: time="2018-02-24T02:12:16.613356183Z" level=info msg="ignoring event" module=libcontainerd namespace=plugins.moby topic=/tasks/delete type="*events.TaskDelete"
+Feb 24 02:12:16 ip-172-31-38-56 dockerd[28405]: time="2018-02-24T02:12:16.613358117Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Feb 24 02:12:16 ip-172-31-38-56 dockerd[28405]: time="2018-02-24T02:12:16.795711129Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/containers/delete type="*events.ContainerDelete"
