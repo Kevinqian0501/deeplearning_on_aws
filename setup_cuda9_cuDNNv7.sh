@@ -30,22 +30,12 @@ sudo cp include/* /usr/local/cuda/include/
 #install virtualenv
 sudo apt-get --assume-yes install python-pip python-dev
 sudo pip install --upgrade pip 
-sudo pip install --upgrade virtualenv 
-
-# create project env
-sudo virtualenv -p python3.5 project
-cd project
-source bin/activate
-export PS1="$"
-pwd
-python --version
-which python
 
 #install jupyter
-sudo pip install jupyter
+pip3 install jupyter
 #Securing a notebook server
-sudo jupyter notebook --generate-config
-sudo jupyter notebook password
+jupyter notebook --generate-config
+jupyter notebook password
 
 
 # after setting password: sudo jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root &
