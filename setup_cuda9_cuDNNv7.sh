@@ -40,3 +40,9 @@ export PS1="$"
 pwd
 python --version
 which python
+
+#install jupyter
+pip install jupyter
+#Securing a notebook server
+jupyter notebook --generate-config
+jupyter notebook password
