@@ -42,10 +42,10 @@ python --version
 which python
 
 #install jupyter
-pip install jupyter
+sudo pip install jupyter
 #Securing a notebook server
-jupyter notebook --generate-config
-jupyter notebook password
+sudo jupyter notebook --generate-config
+sudo jupyter notebook password
 
 
 # after setting password: jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser &
