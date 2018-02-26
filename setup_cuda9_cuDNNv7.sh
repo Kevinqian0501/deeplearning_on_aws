@@ -48,4 +48,4 @@ sudo jupyter notebook --generate-config
 sudo jupyter notebook password
 
 
-# after setting password: jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser &
+# after setting password: sudo jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root &
