@@ -27,8 +27,9 @@ cd cuda
 sudo cp lib64/* /usr/local/cuda/lib64/
 sudo cp include/* /usr/local/cuda/include/
 
-#install virtualenv
+#install pip3
 sudo apt-get --assume-yes install python3-pip python3-dev
+pip3 install --upgrade pip
 
 #install jupyter
 pip3 install jupyter
