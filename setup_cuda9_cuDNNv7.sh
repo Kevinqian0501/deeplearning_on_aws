@@ -33,7 +33,7 @@ sudo pip install --upgrade pip
 sudo pip install --upgrade virtualenv 
 
 # create project env
-sudo virtualenv -p python3.5 project
+virtualenv -p python3.5 project
 cd project
 source bin/activate
 export PS1="$"
