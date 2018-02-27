@@ -30,8 +30,8 @@ sudo cp include/* /usr/local/cuda/include/
 #install pip3
 sudo apt-get --assume-yes install python3-pip python3-dev python-virtualenv
 pip3 install --upgrade pip
-virtualenv --system-site-packages -p python3 project
-source ~/project/bin/activate
+virtualenv --system-site-packages -p python3 tensorflow
+source ~/tensorflow/bin/activate
 pip3 install tensorflow-gpu==1.5.0
 
 #install jupyter
