@@ -27,7 +27,7 @@ cd cuda
 sudo cp lib64/* /usr/local/cuda/lib64/
 sudo cp include/* /usr/local/cuda/include/
 
-#install pip3
+#install pip3 and virtualenv
 sudo apt-get --assume-yes install python3-pip python3-dev python-virtualenv
 pip3 install --upgrade pip
 virtualenv --system-site-packages -p python3 tensorflow
